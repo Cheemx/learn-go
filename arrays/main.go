@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 func main() {
 	var n int
@@ -15,5 +18,6 @@ func main() {
 		fmt.Scan(&num)
 		arr = append(arr, num)
 	}
-	fmt.Print(arr)
+	fmt.Print(arr, "\n")
+	fmt.Println(slices.Min(arr))
 }
